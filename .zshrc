@@ -168,14 +168,8 @@ vscodeext() {
 	echo "Removing $HOME/.vscode/extensions"
 	rm -rf $HOME/.vscode/extensions 
 	
-	echo "unzip default.zip"
-	unzip $HOME/.vscode/default.zip
-	
 	echo "Copying default extensions"
 	cp -a $HOME/.vscode/default/. $HOME/.vscode/extensions
-	
-	echo "unzip $1.zip"
-	unzip $HOME/.vscode/$1.zip
 
 	echo "Copying $1"
 	cp -r $HOME/.vscode/$1/extensions $HOME/.vscode 
