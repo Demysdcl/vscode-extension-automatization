@@ -27,11 +27,26 @@ Oh My Shell has aliases and we can create alias as a function, so I create a fun
 
 ```sh
 vscodeext() {
-       rm -rf $HOME/.vscode/extensions
-       cp -r $HOME/.vscode/$1/extensions $HOME/.vscode
-       cp -a $HOME/.vscode/default/. $HOME/.vscode/extensions
-       code
-       exit
+	echo "Removing $HOME/.vscode/extensions"
+	rm -rf $HOME/.vscode/extensions 
+	
+	echo "Copying default extensions"
+	cp -a $HOME/.vscode/default/. $HOME/.vscode/extensions
+
+	echo "Copying $1"
+	cp -r $HOME/.vscode/$1/extensions $HOME/.vscode 
+	
+	if [  ! -z "\$2" ]
+	then
+	  echo "Copying $2"
+	  cp -r $HOME/.test/$2/extensions $HOME/.test
+	fi
+	
+	echo "opening vscode"
+	code
+	
+	echo "Bye bye!!!"
+	exit
 }
 
 ```
