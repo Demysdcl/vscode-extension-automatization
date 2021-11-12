@@ -64,16 +64,19 @@ sudo chmod +x /usr/local/bin/docker-compose
 #Create SSH Keys
 ssh-keygen
 
-# Oh My Shell
-sudo apt install zsh -y
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-sudo chsh -s /usr/bin/zsh root
-sudo usermod --shell $(which zsh) $USER
-
 # Create docker group and add current user in it
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
+
+# Oh My Shell
+sudo apt install zsh -y
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+sudo chsh -s /usr/bin/zsh root
+sudo usermod --shell $(which zsh) $USER
+
+
