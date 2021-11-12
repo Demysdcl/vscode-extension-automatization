@@ -1,21 +1,23 @@
 {
-  "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-  "vetur.languageFeatures.updateImportOnFileMove": true,
-  "editor.formatOnSave": true,
-  "files.autoSave": "onFocusChange",
-  "powermode.enabled": true,
-  "powermode.presets": "flames",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.eslint.fixAll": true,
-    "source.organizeImports": true
-  },
-  "window.zoomLevel": 1,
-  "tabnine.experimentalAutoImports": true,
-  "code-runner.runInTerminal": true,
-  "code-runner.saveAllFilesBeforeRun": true
-}
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code'",
+    "vetur.languageFeatures.updateImportOnFileMove": true,
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.eslint.fixAll": true,
+      "source.organizeImports": true
+    },
+    "window.zoomLevel": 1,
+    "tabnine.experimentalAutoImports": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true
+  }
