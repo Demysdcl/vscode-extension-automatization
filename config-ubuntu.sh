@@ -23,6 +23,7 @@ sudo apt-get update
 sudo apt-get install peek
 sudo apt-get install -y deepin-screenshot
 sudo apt-get install xclip
+sudo apt-get install unran
 sudo snap install discord
 sudo snap install rambox
 
